@@ -1,0 +1,212 @@
+:root {
+    --blue:#0095f6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.maincontainer{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.cellphoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.leftframe{
+    width: 50%;
+}
+.cellphoto img{
+    height: 50rem;
+    margin-top: 3rem;
+    
+}
+
+.rightframe {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 13rem;
+    
+}
+
+.loginscreen{
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid lightgray;
+    align-items: center;
+    display: flex;    
+    flex-direction: column;
+    width: 80%;
+}
+
+.photouser {
+    overflow: hidden;
+}
+.photouser img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50% ;
+    margin-top: 1rem;
+
+}
+
+.removeacount a{
+    color: var(--blue);
+    padding-top: 3rem;
+        
+}
+
+.textblue {
+    color: var(--blue);
+}
+.textgrey {
+    color: lightgray;
+}
+.changelogin{
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    border: 1px solid lightgray;
+    align-items: center;
+    display: flex;    
+    flex-direction: column;
+    width: 80%;
+}
+.downapp{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    width: 80%;
+    }
+.storeicons img{
+    height: 3rem;
+    margin-top: 1rem;
+    margin: 2rem;
+    
+}
+
+.acountuser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.continuebutton a {
+    background-color: var(--blue);
+    color: white;
+    padding: 0.4rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.continuebutton {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.logoinsta img {
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .maincontainer {
+        width: 100%;
+    }
+    .storeicons {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .maincontainer {
+        width: 85%;
+    }
+    }
+    
+    @media (max-width: 799px) {
+    
+        .storeicons {
+            display: flex;
+            flex-direction: column;
+        }
+        .maincontainer {
+            width: 85%;
+        }
+
+        .continuebutton {
+            text-align: center;
+            display: flex;
+        }
+        .logoinsta img {
+            width: 100%;
+            display: flex;
+        }
+        }
+    
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .storeicons {
+        display: flex;
+        flex-direction: column;
+    }
+    .maincontainer {
+        width: 90%;
+    }
+ .acountuser{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+ .changelogin {
+     text-align: center;
+     width: 100%;
+ }
+    .leftframe {
+        display: none;
+    }
+    .rightframe {
+        margin-top: 3rem;
+    }
+    .loginscreen {
+        width: 100%;
+        
+    }
+    .downapp {
+        width: 100%;
+    }
+    .continuebutton {
+        text-align: center;
+        display: flex;
+    }
+    .logoinsta img {
+        width: 100%;
+        display: flex;
+    }
+}
+
